@@ -12,6 +12,7 @@
 		12A3DA44225B8B30007F5265 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A3DA42225B8B30007F5265 /* Main.storyboard */; };
 		12A3DA46225B8B31007F5265 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12A3DA45225B8B31007F5265 /* Assets.xcassets */; };
 		12A3DA49225B8B31007F5265 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12A3DA47225B8B31007F5265 /* LaunchScreen.storyboard */; };
+		FF60869141A935B9265BD997 /* Pods_wonder_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D5D18BADA7555D9EBA5CCC /* Pods_wonder_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		12A3DA45225B8B31007F5265 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12A3DA48225B8B31007F5265 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12A3DA4A225B8B31007F5265 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D5D18BADA7555D9EBA5CCC /* Pods_wonder_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wonder_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		978CFAC59D3155538BA36C2F /* Pods-wonder-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonder-app.debug.xcconfig"; path = "Target Support Files/Pods-wonder-app/Pods-wonder-app.debug.xcconfig"; sourceTree = "<group>"; };
+		A9ED3096752C528CDBB75463 /* Pods-wonder-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wonder-app.release.xcconfig"; path = "Target Support Files/Pods-wonder-app/Pods-wonder-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF60869141A935B9265BD997 /* Pods_wonder_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				12A3DA3D225B8B30007F5265 /* wonder-app */,
 				12A3DA3C225B8B30007F5265 /* Products */,
+				C5170E47B3C17BCC8060E288 /* Pods */,
+				4B99B7384977BEA831092F06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,24 @@
 			path = "wonder-app";
 			sourceTree = "<group>";
 		};
+		4B99B7384977BEA831092F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47D5D18BADA7555D9EBA5CCC /* Pods_wonder_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5170E47B3C17BCC8060E288 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				978CFAC59D3155538BA36C2F /* Pods-wonder-app.debug.xcconfig */,
+				A9ED3096752C528CDBB75463 /* Pods-wonder-app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12A3DA4D225B8B31007F5265 /* Build configuration list for PBXNativeTarget "wonder-app" */;
 			buildPhases = (
+				9AF729FE3E7C49CF37620125 /* [CP] Check Pods Manifest.lock */,
 				12A3DA37225B8B30007F5265 /* Sources */,
 				12A3DA38225B8B30007F5265 /* Frameworks */,
 				12A3DA39225B8B30007F5265 /* Resources */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9AF729FE3E7C49CF37620125 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wonder-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12A3DA37225B8B30007F5265 /* Sources */ = {
@@ -280,6 +331,7 @@
 		};
 		12A3DA4E225B8B31007F5265 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 978CFAC59D3155538BA36C2F /* Pods-wonder-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +350,7 @@
 		};
 		12A3DA4F225B8B31007F5265 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9ED3096752C528CDBB75463 /* Pods-wonder-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
