@@ -85,7 +85,6 @@
 				978CFAC59D3155538BA36C2F /* Pods-wonder-app.debug.xcconfig */,
 				A9ED3096752C528CDBB75463 /* Pods-wonder-app.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -335,13 +334,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36QB65U3Y3;
+				DEVELOPMENT_TEAM = HNH6526J3U;
 				INFOPLIST_FILE = "wonder-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adadgio.wonder-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myluckyday.wonder-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -354,13 +353,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 36QB65U3Y3;
+				DEVELOPMENT_TEAM = HNH6526J3U;
 				INFOPLIST_FILE = "wonder-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.adadgio.wonder-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myluckyday.wonder-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
